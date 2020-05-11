@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const getLastCommitHash = () => {
   const hash = require('child_process').execSync('git rev-parse HEAD')
     .toString()

@@ -1,14 +1,18 @@
 {
   "name": "vue-cli-plugin-build-info",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
+  "types": "build-info.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/untael/vue-cli-plugin-build-info"
+  },
+  "dependencies": {
+    "webpack": "^4.43.0"
   },
   "keywords": [
     "build-info",
@@ -22,4 +26,3 @@
   },
   "homepage": "https://github.com/untael/vue-cli-plugin-build-info#readme"
 }
-
