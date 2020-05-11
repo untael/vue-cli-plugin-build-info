@@ -1,22 +1,25 @@
 {
   "name": "vue-cli-plugin-build-info",
   "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/untael/vue-cli-plugin-build-info"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-typescript": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
-    "typescript": "~3.8.3",
-    "vue-template-compiler": "^2.6.11"
-  }
+  "keywords": [
+    "build-info",
+    "plugin",
+    "vue",
+    "cli"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/untael/vue-cli-plugin-build-info/issues"
+  },
+  "homepage": "https://github.com/untael/vue-cli-plugin-build-info#readme"
 }
+
