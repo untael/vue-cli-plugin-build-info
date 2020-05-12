@@ -1,0 +1,7 @@
+!/dist
+/docs
+
+.circleci
+.idea
+.vscode
+
