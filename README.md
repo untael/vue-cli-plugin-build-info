@@ -2,6 +2,7 @@
 # vue-cli-plugin-build-info
 
 Vue-cli plugin that shows build information in console.
+It may be useful if the project is already on stage and you are not sure which version of the build is currently on it. Or just want to know the information about the last commit in the current build.
 
 ![Demo](docs/demo.png)
 
@@ -29,10 +30,10 @@ The plugin automatically injects a method into your entry file that allows you t
 import { consoleBuildInfo } from 'vue-cli-plugin-build-info/plugin'
 consoleBuildInfo()
 ```
-You can also manually import an object **BUILD_INFO** that contains **VERSION, TIMESTAMP, COMMIT** in itself to independently use it for your own purposes.
+You can also import a method **getBuildInfo** that return an object **BUILD_INFO** that contains **VERSION, TIMESTAMP, COMMIT** to use it for your own purposes.
 ``` js
-import {BUILD_INFO} from 'vue-cli-plugin-build-info/plugin'
-console.log('Version of project: ', BUILD_INFO.VERSION)
+import {getBuildInfo} from 'vue-cli-plugin-build-info/plugin'
+console.log(getBuildInfo().VERSION)
 ```
 ## Licence
 MIT
