@@ -4,6 +4,7 @@
 Vue-cli plugin that shows build information in console.
 
 It may be useful if you have established CI out of your control and want to make sure the version everyone sees on staging corresponds to last commit.
+
 ![Demo](docs/demo.png)
 
 ## Install
