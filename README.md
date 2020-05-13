@@ -3,7 +3,7 @@
 
 Vue-cli plugin that shows build information in console.
 
-It may be useful if the project is already on stage and you are not sure which version of the build is currently on it. Or just want to know the information about the last commit in the current build.
+It may be useful if the project is already on staging and you are not sure which version of the build is currently on it. Or just want to know the information about the last commit in the current build.
 
 ![Demo](docs/demo.png)
 
