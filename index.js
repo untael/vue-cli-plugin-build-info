@@ -10,9 +10,9 @@ const package = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 
 let plugin = new (require('webpack')).DefinePlugin({
   BUILD_INFO: {
-    VERSION: JSON.stringify(package.version),
-    TIMESTAMP: JSON.stringify(new Date().toUTCString()),
     COMMIT: JSON.stringify(getLastCommitHash()),
+    TIMESTAMP: JSON.stringify(new Date().toUTCString()),
+    VERSION: JSON.stringify(package.version),
   },
 })
 
