@@ -1,3 +1,6 @@
+const { isNuxt, hasEntryFile } = require('./lib/constants')
+
+
 const fs = require('fs')
 
 const getLastCommitHash = () => {
@@ -6,18 +9,23 @@ const getLastCommitHash = () => {
   return hash.slice(0, 6)
 }
 
-const package = JSON.parse(fs.readFileSync('package.json', 'utf8'))
+const projectPackage = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 
 let plugin = new (require('webpack')).DefinePlugin({
   BUILD_INFO: {
     COMMIT: JSON.stringify(getLastCommitHash()),
     TIMESTAMP: JSON.stringify(new Date().toUTCString()),
-    VERSION: JSON.stringify(package.version),
+    VERSION: JSON.stringify(projectPackage.version),
   },
 })
 
-module.exports = (api, options) => {
-  api.configureWebpack(webpackConfig => {
-    webpackConfig.plugins.push(plugin)
-  })
+if (isNuxt) {
+  module.exports = plugin
+} else {
+  module.exports = (api, options) => {
+    api.configureWebpack(webpackConfig => {
+      webpackConfig.plugins.push(plugin)
+    })
+  }
 }
+
