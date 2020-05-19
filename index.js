@@ -1,6 +1,5 @@
 const { isNuxt, hasEntryFile } = require('./lib/constants')
 
-
 const fs = require('fs')
 
 const getLastCommitHash = () => {
@@ -18,6 +17,7 @@ let plugin = new (require('webpack')).DefinePlugin({
     VERSION: JSON.stringify(projectPackage.version),
   },
 })
+
 
 if (isNuxt) {
   module.exports = plugin

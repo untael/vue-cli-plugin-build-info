@@ -14,7 +14,7 @@ module.exports = (api, opts) => {
       if (isNuxt) {
         const nuxtConfig = fs.readFileSync('nuxt.config.js', { encoding: 'utf-8' })
         const lines = nuxtConfig.split(/\r?\n/g)
-        lines.unshift('const VueCliBuildInfoPlugin = require(\'vue-cli-plugin-build-info\')')
+        lines.unshift('const VueCliPluginBuildInfo = require(\'vue-cli-plugin-build-info\')')
         fs.writeFileSync('nuxt.config.js', lines.join(EOL), { encoding: 'utf-8' })
       }
       if (hasEntryFile) {

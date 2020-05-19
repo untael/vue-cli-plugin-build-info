@@ -9,5 +9,3 @@ export function consoleBuildInfo () {
 export function getBuildInfo () {
   return BUILD_INFO
 }
-
-
