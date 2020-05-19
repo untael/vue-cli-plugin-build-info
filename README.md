@@ -47,7 +47,7 @@ The plugin automatically create `vue-cli-plugin-build-info.js` in your plugins d
 1. Add the file path inside the `plugins` key of our `nuxt.config.js`:
 ``` js
 //nuxt.config.js
-const VueCliPluginBuildInfo= require('vue-cli-plugin-build-info')
+const VueCliPluginBuildInfo = require('vue-cli-plugin-build-info')
 
 export  default { 
   plugins: ['~/plugins/vue-cli-plugin-build-info']
@@ -57,7 +57,7 @@ export  default {
 
 ``` js
 //nuxt.config.js
-const VueCliPluginBuildInfo= require('vue-cli-plugin-build-info')
+const VueCliPluginBuildInfo = require('vue-cli-plugin-build-info')
 
 export  default { 
   build: {  
