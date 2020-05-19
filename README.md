@@ -50,7 +50,7 @@ The plugin automatically create `vue-cli-plugin-build-info.js` in your plugins d
 const VueCliPluginBuildInfo= require('vue-cli-plugin-build-info')
 
 export  default { 
-	plugins: ['~/plugins/vue-cli-plugin-build-info']
+  plugins: ['~/plugins/vue-cli-plugin-build-info']
 }
 ```
 2. Add imported plugin in `build` section `transpile` it:
@@ -60,10 +60,10 @@ export  default {
 const VueCliPluginBuildInfo= require('vue-cli-plugin-build-info')
 
 export  default { 
-	build: {  
-		transpile: ['vue-cli-plugin-build-info'],  
-		plugins: [  VueCliPluginBuildInfo  ],
-	}
+  build: {  
+    transpile: ['vue-cli-plugin-build-info'],  
+    plugins: [  VueCliPluginBuildInfo  ],
+  }
 }
 ```
 ## Licence
