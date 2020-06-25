@@ -66,5 +66,8 @@ export  default {
   }
 }
 ```
+## Explanations:
+```Commit: Unable to retrieve commit information``` - you do not init your local Git repository and your local directory doesn't have a .git folder
+
 ## Licence
 MIT
