@@ -9,6 +9,7 @@ const getLastCommitHash = () => {
       .slice(0, 6)
     return hash
   } catch (err) {
+    return 'Unable to retrieve commit information'
   }
 }
 
