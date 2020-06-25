@@ -9,7 +9,7 @@ const getLastCommitHash = () => {
       .slice(0, 6)
     return hash
   } catch (err) {
-    return 'Unable to retrieve commit information'
+    return `Unable to retrieve commit information. <a href="https://github.com/untael/vue-cli-plugin-build-info#explanations">Explanations</a>`
   }
 }
 
