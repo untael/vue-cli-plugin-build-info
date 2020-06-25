@@ -3,9 +3,14 @@ const { isNuxt, hasEntryFile } = require('./lib/constants')
 const fs = require('fs')
 
 const getLastCommitHash = () => {
-  const hash = require('child_process').execSync('git rev-parse HEAD')
-    .toString()
-  return hash.slice(0, 6)
+  try {
+    const hash = require('child_process').execSync('git rev-parse HEAD')
+      .toString()
+      .slice(0, 6)
+    return hash
+  } catch (err) {
+    console.log('err', err)
+  }
 }
 
 const projectPackage = JSON.parse(fs.readFileSync('package.json', 'utf8'))
