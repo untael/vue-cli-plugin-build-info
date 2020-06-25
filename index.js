@@ -9,7 +9,6 @@ const getLastCommitHash = () => {
       .slice(0, 6)
     return hash
   } catch (err) {
-    console.log('err', err)
   }
 }
 
